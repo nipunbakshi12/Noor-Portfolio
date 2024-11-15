@@ -144,7 +144,7 @@ export default function Portfolio() {
                     whileHover={{ scale: 1.1, rotate: 2 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <img src={Image} alt="Noor" className="w-full h-full object-cover rounded-lg" />
+                    <img src={Image} alt="Noor" className="w-full mt-8 mx-0 h-full object-cover rounded-lg" />
                 </motion.div>
 
                 {/* Name and Intro Text */}
