@@ -152,7 +152,7 @@ export default function Portfolio() {
                     whileHover={{ scale: 1.1, rotate: 2 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <img src={Image} alt="Noor" className="responsive-image mt-8 pt-10 md:m-0 md:p-0 w-full h-full mx-0 object-cover rounded-lg" />
+                    <img src={Image} alt="Noor" className="responsive-image mt-8 pt-20 md:w-full md:m-0 md:p-0 h-full mx-0 object-cover rounded-lg" />
                 </motion.div>
 
                 {/* Name and Intro Text */}
@@ -179,8 +179,7 @@ export default function Portfolio() {
 
             {/* Featured In Section */}
             <motion.section
-                className="py-8 px-4"
-                initial="hidden"
+                className="py-8 px-4 mt-[7rem] md:mt-0"
                 animate="visible"
                 variants={staggerContainer}
             >
