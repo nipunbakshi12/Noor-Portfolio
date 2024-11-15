@@ -179,7 +179,7 @@ export default function Portfolio() {
 
             {/* Featured In Section */}
             <motion.section
-                className="py-8 px-4 mt-[7rem] md:mt-0"
+                className="py-8 px-4 mt-[9rem] md:mt-0"
                 animate="visible"
                 variants={staggerContainer}
             >
