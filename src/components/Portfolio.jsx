@@ -33,6 +33,7 @@ import project8Image from '../assets/projectImg/prj_8.png';
 import project9Image from '../assets/projectImg/prj_9.png';
 
 import instaImage1 from '../assets/projectImg/prj_10.png';
+import Footer from './Footer';
 
 
 // Animation Variants
@@ -60,7 +61,7 @@ export default function Portfolio() {
         {
             id: 1,
             title: "Empowering Change: Government Awareness Campaign",
-            description: "Featured as a lead in a government campaign aimed at raising awareness on crucial social issues. This project emphasized the importance of civic responsibility and was broadcasted across various digital and public platforms to reach diverse audiences.",
+            description: "Featured as a lead in a government campaign aimed at raising awareness on crucial social issues. This project emphasized the importance of civic responsibility and was broadcasted across various digital and public platforms.",
             image: project1Image,
             link: "https://www.youtube.com/watch?v=LRcFdfrWBbw&ab_channel=AdityaChaudharyOfficial",
         },
@@ -74,7 +75,7 @@ export default function Portfolio() {
         {
             id: 3,
             title: "Fun with Harsh Beniwal: A YouTube Sketch Series",
-            description: "Collaborated with YouTube sensation Harsh Beniwal in a comedic sketch series that amassed a wide online audience. Played a key role that added to the lighthearted, relatable humor of the series, bringing the characters to life for fans worldwide.",
+            description: "Collaborated with YouTube sensation Harsh Beniwal in a comedic sketch series that amassed a wide online audience. Played a key role that added to the lighthearted, relatable humor of the series.",
             image: project3Image,
             link: "https://www.youtube.com/watch?v=AhvWahoV8D8&ab_channel=HarshBeniwal",
         },
@@ -109,14 +110,14 @@ export default function Portfolio() {
         {
             id: 8,
             title: "Yes Madam: A Digital Ad for Modern Grooming",
-            description: "Took on a lead role in Yes Madam, a digital advertisement focusing on grooming and personal care services at home. The ad is fun, fresh, and appeals to those looking for convenient, high-quality grooming experiences right at their doorstep.",
+            description: "Took on a lead role in Yes Madam, a digital advertisement focusing on grooming and personal care services at home. The ad is fun, fresh, and appeals to those looking for convenient.",
             image: project8Image,
             link: "https://www.instagram.com/p/C8MIQe1RQKw/?igsh=ZHoydGUxOTI3eWIz&img_index=1",
         },
         {
             id: 9,
             title: "Elegance Redefined: Malabar Jewelers Digital Ad",
-            description: "Appeared in a digital campaign for Malabar Jewelers, highlighting the beauty and elegance of fine jewelry. This ad showcases intricate designs and luxury, capturing the attention of jewelry enthusiasts and fashion lovers alike.",
+            description: "Appeared in a digital campaign for Malabar Jewelers, highlighting the beauty and elegance of fine jewelry. This ad showcases intricate designs and luxury, capturing the attention of jewelry enthusiasts.",
             image: project9Image,
             link: "https://www.facebook.com/61564750303059/videos/unbreakable-trust-%E0%A4%85%E0%A4%9F%E0%A5%82%E0%A4%9F-%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%B8malabar-gold-and-diamonds/889144886483811/?rdid=eHIsFmUdR0QtvZzS",
         },
@@ -147,15 +148,15 @@ export default function Portfolio() {
             >
                 {/* Profile Image */}
                 <motion.div
-                    className="responsive-container w-96 h-96 lg:w-[28rem] lg:h-[28rem] sm:w-64 sm:h-64 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-8 flex-shrink-0"
+                    className="responsive-container w-96 h-96 lg:w-[28rem] flex justify-center items-end lg:h-[28rem] sm:w-full sm:h-full rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-8 flex-shrink-0 mt-[5rem]"
                     whileHover={{ scale: 1.1, rotate: 2 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <img src={Image} alt="Noor" className="responsive-image w-full mt-8 mx-0 h-full object-cover rounded-lg" />
+                    <img src={Image} alt="Noor" className="responsive-image mt-8 pt-10 md:m-0 md:p-0 w-full h-full mx-0 object-cover rounded-lg" />
                 </motion.div>
 
                 {/* Name and Intro Text */}
-                <div className="flex flex-col justify-center items-center md:items-start">
+                <div className="flex flex-col md:mt-20 justify-center items-center md:items-start">
                     <motion.h1
                         className="text-8xl font-bold mb-4 text-white shadow-lg"
                         initial={{ y: -20, opacity: 0 }}
@@ -286,41 +287,13 @@ export default function Portfolio() {
                 </div>
             </motion.section>
 
-
-
             {/* Carousel Section */}
-            <h2 className="text-4xl font-bold mb-8 text-center">Photo Gallery</h2>
-            {/* <div className="relative flex justify-center m-8 w-full max-w-lg h-[500px] sm:h-[600px] mx-auto">
-                <motion.img
-                    src={carouselImages[currentIndex]}
-                    alt={`Carousel ${currentIndex + 1}`}
-                    className="w-full h-full object-contain rounded-lg"
-                    initial={{ opacity: 0, x: 100 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -100 }}
-                    transition={{ duration: 0.5 }}
-                /> */}
-
-            {/* Navigation Buttons */}
-            {/* <button
-                    onClick={prevSlide}
-                    className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-800 p-2 rounded-full text-white"
-                >
-                    ❮
-                </button>
-                <button
-                    onClick={nextSlide}
-                    className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-800 p-2 rounded-full text-white"
-                >
-                    ❯
-                </button>
-            </div> */}
-
+            <h2 className="text-4xl font-bold md:mb-6 text-center">Photo Gallery</h2>
             <Swiper
                 effect={'cards'}
                 grabCursor={true}
                 modules={[EffectCards]}
-                className="mySwiper mb-3"
+                className="mySwiper mb-8"
                 initialSlide={5}
             >
                 {carouselImages.map((image, index) => (
@@ -331,7 +304,8 @@ export default function Portfolio() {
             </Swiper>
 
             {/* Contact Section */}
-            <motion.section
+            <Footer />
+            {/* <motion.section
                 className="py-16 px-4 bg-gray-800"
                 initial="hidden"
                 animate="visible"
@@ -356,7 +330,7 @@ export default function Portfolio() {
                         <Mail size={32} />
                     </motion.a>
                 </div>
-            </motion.section>
+            </motion.section> */}
         </div>
     );
 }
