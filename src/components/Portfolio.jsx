@@ -1,12 +1,19 @@
 import { motion } from 'framer-motion';
 import { Instagram, Mail } from 'lucide-react';
 import Image from '../assets/profile_1.jpeg';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+import { EffectCards } from 'swiper/modules';
+import './styles.css';
 
 // Importing 10 images for the carousel and gallery
 import img1 from '../assets/one.jpeg';
 import img2 from '../assets/two.jpeg';
 import img3 from '../assets/three.jpeg';
-import img4 from '../assets/four.jpeg';
+// import img4 from '../assets/four.jpeg';
 import img5 from '../assets/five.jpeg';
 import img6 from '../assets/six.jpeg';
 import img7 from '../assets/seven.jpeg';
@@ -116,7 +123,7 @@ export default function Portfolio() {
 
     ];
 
-    const carouselImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
+    const carouselImages = [img1, img2, img3, img5, img6, img7, img8, img9, img10];
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextSlide = () => {
@@ -283,7 +290,7 @@ export default function Portfolio() {
 
             {/* Carousel Section */}
             <h2 className="text-4xl font-bold mb-8 text-center">Photo Gallery</h2>
-            <div className="relative flex justify-center m-8 w-full max-w-lg h-[500px] sm:h-[600px] mx-auto">
+            {/* <div className="relative flex justify-center m-8 w-full max-w-lg h-[500px] sm:h-[600px] mx-auto">
                 <motion.img
                     src={carouselImages[currentIndex]}
                     alt={`Carousel ${currentIndex + 1}`}
@@ -292,10 +299,10 @@ export default function Portfolio() {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -100 }}
                     transition={{ duration: 0.5 }}
-                />
+                /> */}
 
-                {/* Navigation Buttons */}
-                <button
+            {/* Navigation Buttons */}
+            {/* <button
                     onClick={prevSlide}
                     className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-800 p-2 rounded-full text-white"
                 >
@@ -307,7 +314,21 @@ export default function Portfolio() {
                 >
                     ❯
                 </button>
-            </div>
+            </div> */}
+
+            <Swiper
+                effect={'cards'}
+                grabCursor={true}
+                modules={[EffectCards]}
+                className="mySwiper mb-3"
+                initialSlide={5}
+            >
+                {carouselImages.map((image, index) => (
+                    <SwiperSlide key={index}>
+                        <img src={image} alt={`Carousel ${index + 1}`} className="w-full h-full object-cover" />
+                    </SwiperSlide>
+                ))}
+            </Swiper>
 
             {/* Contact Section */}
             <motion.section
