@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Ensure the home container takes up the full viewport */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+  min-height: 100vh; /* Full height of the viewport */
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  max-height: 100vh; /* Restrict height to prevent scrolling */
+  overflow: hidden;
+}
+.photo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Make image smaller */
+.window-frame {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+  border: 4px solid #ff6961;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+.actress-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.info-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Increase text size */
+.actress-name {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.designation {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Center-align social media icons */
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.social-media-icons a {
+  color: white;
+  transition: color 0.3s;
+}
+
+.social-media-icons a:hover {
+  color: #ff6961;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .home-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .photo-section,
+  .info-section {
+    margin: 0 20px;
+  }
+
+  .window-frame {
+    width: 220px;
+    height: 220px;
+  }
+}
