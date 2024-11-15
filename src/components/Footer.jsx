@@ -40,7 +40,7 @@ const Footer = () => {
                     {/* Social Icons */}
                     <div className="flex space-x-6 mb-4 md:mb-0">
                         <a
-                            href="https://www.instagram.com/yourprofile"
+                            href="https://www.instagram.com/oberoi_noor3/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hover:text-pink-500 transition duration-200"
@@ -48,7 +48,7 @@ const Footer = () => {
                             <FaInstagram size={28} />
                         </a>
                         <a
-                            href="mailto:youremail@example.com"
+                            href="mailto:varanpreetkaur@gmail.com"
                             className="hover:text-blue-400 transition duration-200"
                         >
                             <FaEnvelope size={28} />
