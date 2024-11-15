@@ -147,11 +147,11 @@ export default function Portfolio() {
             >
                 {/* Profile Image */}
                 <motion.div
-                    className="w-96 h-96 lg:w-[28rem] lg:h-[28rem] sm:w-64 sm:h-64 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-8 flex-shrink-0"
+                    className="responsive-container w-96 h-96 lg:w-[28rem] lg:h-[28rem] sm:w-64 sm:h-64 rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-8 flex-shrink-0"
                     whileHover={{ scale: 1.1, rotate: 2 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <img src={Image} alt="Noor" className="w-full mt-8 mx-0 h-full object-cover rounded-lg" />
+                    <img src={Image} alt="Noor" className="responsive-image w-full mt-8 mx-0 h-full object-cover rounded-lg" />
                 </motion.div>
 
                 {/* Name and Intro Text */}

@@ -17,6 +17,23 @@ body {
   color: #fff;
 }
 
+@media (max-width: 640px) {
+  .responsive-container {
+    width: 70vw; /* Set circular container width relative to viewport */
+    height: 70vw; /* Ensure height matches width for a perfect circle */
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden; /* Clip excess parts of the image */
+    margin: 0 auto 1.5rem; /* Center container and add space below */
+  }
+
+  .responsive-image {
+    width: 100%; /* Scale to container width */
+    height: 100%; /* Scale to container height */
+    object-fit: cover; /* Ensure the image fills the circle */
+    object-position: 50% 25%; /* Adjust to focus more on the face */
+  }
+}
+
 /* .swiper-slide:nth-child(1n) {
   background-color: rgb(206, 17, 17);
 }
