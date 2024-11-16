@@ -172,7 +172,7 @@ export default function Portfolio() {
                         animate={{ y: 0 }}
                         transition={{ duration: 1 }}
                     >
-                        A 21-year-old actress from Delhi, fluent in Punjabi, Hindi, and English. With featured roles in web series, movies, and theatrical ads, Noor's career is on the rise. She’s worked with brands like <strong>Image Bazaar</strong>, <strong>Yes Madam</strong>, and <strong>Sanfe</strong>, and appeared in major campaigns for <strong>INOX</strong>, <strong>Wave</strong>, and <strong>Max Cinema</strong>. Currently, she’s part of the hit show <span className="font-bold underline">Delhi Crime Season 3</span> and recently featured in Netflix’s <span className="font-bold underline">Fabulous Lives vs Bollywood Wives</span>. Noor has also completed a short film and a full-length feature for <strong>Jio Cinema</strong> (yet to be released).
+                        A 21-year-old actress from Delhi, fluent in Punjabi, Hindi, and English. With featured roles in web series, movies, and theatrical ads, Noor's career is on the rise. She’s worked with brands like <strong>Image Bazaar</strong>, <strong>Yes Madam</strong>, and <strong>Sanfe</strong>, and appeared in major campaigns for <strong>INOX</strong>, <strong>Wave</strong>, and <strong>Max Cinema</strong>. Recently featured in Netflix’s <span className="font-bold underline">Fabulous Lives vs Bollywood Wives</span>. Noor has also completed a short film and a full-length feature for <strong>Jio Cinema</strong> (yet to be released).
                     </motion.p>
                 </div>
             </motion.header>
