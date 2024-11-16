@@ -185,7 +185,7 @@ export default function Portfolio() {
             >
                 <h2 className="text-4xl font-bold mb-4 text-center">Featured In</h2>
                 <div className="flex flex-wrap justify-center gap-4">
-                    {["Naadaniyaan", "Metro In Dino", "Daring Partner", "Children of Freedom", "Thug Life", "Fabulous Lives of Bollywood Wives", "Delhi Crime Season 3"].map((series, index) => (
+                    {["Naadaniyaan", "Metro In Dino", "Daring Partner", "Children of Freedom", "Thug Life", "Fabulous Lives of Bollywood Wives"].map((series, index) => (
                         <motion.div
                             key={index}
                             className="px-4 py-2 bg-gray-800 rounded-lg text-white text-center text-lg shadow-md"
